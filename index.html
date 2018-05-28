@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>web blog</title>
+	<script src="js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<meta name="viewport" content="width=device-with">
+	<style type="text/css">
+	div.container{
+			width: 100%;
+		
+		}
+		header,footer{
+		/*if you want to style two elements the same way do with commas*/
+		color: #ffffff;
+		background-color: #408080;
+		text-align: center;
+		/*clear is an attribute that is used to specify on which part you dont want a floating item*/
+		clear: left;
+		padding: 2em;
+		color: white;
+		}
+		nav{	float: left;
+			margin: 0;
+			padding: 2em;
+			max-width: 200px;
+}
+article{
+			margin-left: 200px;
+			border-left: 2px solid black;
+			padding: 2em;
+			background-color: gray;
+			/*overflow is used to add scrollbars*/
+			overflow: hidden;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<header>NANYUKIH</header>
+		<!--BELOW IS THE SECTION FOR the navigation this is where your links to other segments in the web page-->
+		<nav>
+			<!--we place then createated an unordered list where we place our navigation links-->
+			<ul>
+				<!--#refers to an id selector-->
+				<li class="active"><a  href="#">homepage</a></li>
+				<li><a href="secondpage.html">aboutus</a></li>
+				<li><a href="#contactus">contactus</a></li>
+				<li><a href="#ff">log in/sign up</a></li>
+			</ul>
+		</nav>
+		<article>
+			<marquee>
+			<h1>Nanyuki ndo home mtaa ya roots</h1></marquee>
+		</article>
+		<hr>
+		<div class="row">
+			<div class="col-sm-4">
+				<img src="p.jpeg" class="img-circle" height="200px" width="200px"><br>
+				<p>
+				Nanyuki is a market town in Laikipia County of Kenya lying northwest of Mount Kenya along the A2 road and at the terminus of the branch railway from Nairobi. It is situated just north of the Equator (0° 01' North). It was founded in 1907 by British settlers, some of whose descendants still live in and around the town. Nanyuki is currently the main airfield (airbase) of the Kenya Air Force. The British Army also keeps a base at The Nanyuki Show Ground (NSG) from where it conducts yearly desert and jungle training exercises on the mountain and in the arid areas to the north.
+			</p></div>
+			<div class="col-sm-4">
+				<img src="images.jpeg" class="img-circle" height="200px" width="200px"><br>
+				<p>
+				The town was started by British settlers during the early days of colonial Kenya in 1907. Some of their descendants still live in or around the town. Major Digby Tatham-Warter, a decorated veteran of Operation Market Garden, moved to Nanyuki after the war and lived on his farm until his death in 1993.[1] The market centre is famous for farms, ranches, game parks and wildlife conservancies in the region. It's also the base for people seeking to climb Mount Kenya, the most famous landmark in the country. The Equator line passes 6.5 km (4 mi) south of this town
+			</p></div>
+			<div class="col-sm-4">
+				<img src="gg.jpg" class="img-circle" height="200px" width="200px"><br>
+				<p>
+				Nanyuki municipality had an urban population of 49,233 in 2009.[3] Most members of the population earn their money through trade. Shops in the town supply many farms, ranches and game parks in a wide circle. Originally, most shops were owned by Indians, who still form a sizable part of the population. Climbers and backpackers visit Nanyuki on their way to or from Mount Kenya along the Sirimon and Burguret routes and many other tourists pass through the town. Nanyuki therefore has many hotels, of which Mount Kenya Safari Club and Sportsman’s Arms Hotel are the most prominent and best known. Other hotels include Lion’s Court, Equatorial Hotel, Mount Kenya Paradise Hotel and Joskaki Hotel.
+			</p></div>
+				</div>
+				<form>
+					<p>wish to join us?</p><br>
+					<div class="row">
+					<div class="col-sm-6" id="ff">
+		<label for="user name">first name</label><br>
+		<input type="text" name="first name" placeholder="firstname"><br>
+		<label for="user name">middle name</label><br>
+		<input type="text" name="Middle name" placeholder="midllename"><br>
+		<label for="user name">surname name</label><br>
+		<input type="text" name="Surname name" placeholder="Surname"><br>
+		<label for="user name">email</label><br>
+		<input type="text" name="email" placeholder="input your email"><br>
+		<label for="user name">password</label><br>
+		<input type="password" name="password" placeholder="input password"><br>
+		<label for="user name">confirm password</label><br>
+		<input type="password" name="password" placeholder="confirm password"><br>
+		<input type="button" name="button" value="sign up">
+		<button class="button btn-danger"><a href="login.html" target="_top">have an account</a></button>
+	</form>
+				<form>
+				<p>leave a comment</p><br>
+				<textarea name="message" rows="12" cols="50">
+		input your comment
+				</textarea><br>
+				<!--text area is a mutiple line input field-->
+				<button type="button" onclick="thankyou">submit comment
+					
+				</button>
+			</form></div>
+			<div class="row">
+					<div class="col-sm-6">
+						<img src="nikotu.jpg">
+					</div></div>
+
+			<footer id="contactus">
+				copyright &copy;nikoh <br>
+			0740245720 <br>
+			&reg;nairobi
+			</footer>
+
+</body>
+</html>
